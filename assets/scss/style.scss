@@ -1,6 +1,6 @@
 // Any variables that need to use Hugo configuration need to be declared here
 // Colors
-$primary: {{ .Site.Params.colors.primary | default "#f24088" }};
+$primary: {{ .Site.Params.colors.primary | default "#237d9e" }};
 $black: {{ .Site.Params.colors.black | default "#2f2f41" }};
 $white: {{ .Site.Params.colors.white | default "#ffffff" }};
 $white-offset: {{ .Site.Params.colors.white_offset | default "#f6f7ff" }};
