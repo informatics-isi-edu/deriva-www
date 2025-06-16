@@ -1,19 +1,43 @@
-// ───────────────────────────────────────────────
-// Header / navbar height override
-// ───────────────────────────────────────────────
+/* ───────────────────────────────────────────────
+   Header height & typography overrides
+   (works with the template snippet you posted)
+   ─────────────────────────────────────────────── */
 
-// Increase top-bottom padding on the Bootstrap navbar
-.navbar {
-  padding-top: 1.25rem;   // default is .5rem  ( = 8 px)
+/* Desktop & tablet (≥ 992 px) */
+.header {
+  /* increase vertical breathing-room */
+  padding-top: 1.25rem;   /* default Serif ≈ .5rem */
   padding-bottom: 1.25rem;
+
+  /* optional subtle shadow so the taller bar
+     still feels anchored */
+  box-shadow: 0 2px 4px rgba(0,0,0,.06);
 }
 
-// Optional: scale logo so it still fits
-.navbar-brand img {
-  max-height: 48px;       // tweak to taste
+/* Scale the logo so it fits the new height */
+.logo img,
+.logo-mobile img {
+  max-height: 48px;       /* tweak to taste */
 }
 
-// Optional: bump font size of the nav links
-.navbar-nav .nav-link {
-  font-size: 1.1rem;      // default 1rem
+/* Slightly larger nav link text */
+nav .nav-link {
+  font-size: 1.1rem;      /* default 1rem */
+}
+
+/* ── Mobile (≤ 991.98 px) ─────────────────────── */
+@media (max-width: 991.98px) {
+  .header {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+  }
+
+  .logo img,
+  .logo-mobile img {
+    max-height: 40px;
+  }
+
+  nav .nav-link {
+    font-size: 1rem;
+  }
 }
