@@ -8,6 +8,6 @@ intro_image_absolute_offset: "auto auto -100px -80px" # used to tweak the positi
 intro_image_hide_on_mobile: true
 ---
 
-# Serif - A Hugo Business Theme.
+# Accelerating discovery through every stage of the data lifecycle
 
-Serif contains content types for a typical business website. The theme is fully responsive, blazing fast and artfully illustrated.
+DERIVA is an innovative open-source scientific asset management platform designed to support scientific collaboration through the full lifecycle of data - from early experiment design, to data acquisition, analyses and ultimately publication.
