@@ -17,15 +17,15 @@ title = "Hugo Serif Theme"
 
   [params.homepage]
     sticky_header = true
-    show_contact_box = true      # show / hide the contaxt box on the homepage
+    show_contact_box = false      # show / hide the contaxt box on the homepage
     show_services_button = false # show / hide the "view all services" button
 
   [params.logo]
-    mobile = "images/logo/logo-mobile.svg"
+    mobile = "images/logo/logo.png"
     mobile_height = "36px"
-    desktop = "images/logo/logo.svg"
+    desktop = "images/logo/logo.png"
     desktop_height = "36px"
-    alt = "Serif - A Hugo Business Theme"
+    alt = "DERIVA - an asset management platform designed to support scientific collaboration through the full lifecycle of data"
 
   [params.fonts]
   # Google Fonts request for Inter (400 regular & 600 semi-bold)
@@ -38,7 +38,8 @@ title = "Hugo Serif Theme"
 
 
   [params.colors]
-    primary = "#f24088"
+    primary = "#237d9e"
+    secondary = "#CBE28E"
     black = "#2f2f41"
     white = "#ffffff"
     white_offset = "#f6f7ff"
