@@ -1,4 +1,4 @@
-$primary: {{ .Site.Params.colors.primary | default "#237d9e" }};
+$primary: #237d9e;
 
 $grid-breakpoints: (
   xs: 0,
