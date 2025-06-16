@@ -1,43 +1,38 @@
 /* ───────────────────────────────────────────────
-   Header height & typography overrides
-   (works with the template snippet you posted)
+   Taller header (+33 %) & larger logo
    ─────────────────────────────────────────────── */
 
 /* Desktop & tablet (≥ 992 px) */
 .header {
-  /* increase vertical breathing-room */
-  padding-top: 1.25rem;   /* default Serif ≈ .5rem */
-  padding-bottom: 1.25rem;
-
-  /* optional subtle shadow so the taller bar
-     still feels anchored */
-  box-shadow: 0 2px 4px rgba(0,0,0,.06);
+  /* ↑ from 1.25 rem to 1.75 rem  (~28 px top + bottom) */
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
 }
 
-/* Scale the logo so it fits the new height */
+/* Scale logo to fill new height */
 .logo img,
 .logo-mobile img {
-  max-height: 48px;       /* tweak to taste */
+  max-height: 64px;   /* was 48px */
 }
 
-/* Slightly larger nav link text */
+/* Slightly bigger nav text so it balances the taller bar */
 nav .nav-link {
-  font-size: 1.1rem;      /* default 1rem */
+  font-size: 1.15rem;   /* was 1.1rem */
 }
 
-/* ── Mobile (≤ 991.98 px) ─────────────────────── */
+/* ── Mobile (≤ 991.98 px) ────────────────────────── */
 @media (max-width: 991.98px) {
   .header {
-    padding-top: .75rem;
-    padding-bottom: .75rem;
+    padding-top: 1rem;    /* increase a bit on mobile too */
+    padding-bottom: 1rem;
   }
 
   .logo img,
   .logo-mobile img {
-    max-height: 40px;
+    max-height: 48px;     /* proportionally larger on mobile */
   }
 
   nav .nav-link {
-    font-size: 1rem;
+    font-size: 1.05rem;
   }
 }
