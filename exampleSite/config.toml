@@ -28,10 +28,14 @@ title = "Hugo Serif Theme"
     alt = "Serif - A Hugo Business Theme"
 
   [params.fonts]
-    # sets the google font link in layouts/partials/google-fonts.html
-    google_fonts = 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Source+Sans+Pro:wght@400;700&display=swap'
-    heading = "Playfair Display"
-    base = "Source Sans Pro"
+  # Google Fonts request for Inter (400 regular & 600 semi-bold)
+  google_fonts = "https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+
+  # Tell the theme which families to use
+  heading      = "Inter"
+  base         = "Inter"
+
+
 
   [params.colors]
     primary = "#f24088"
