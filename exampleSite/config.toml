@@ -103,3 +103,8 @@ title = "DERIVA"
     name = "Privacy Policy"
     url = "#"
     weight = 2
+
+  [markup]
+    [markup.goldmark]
+      [markup.goldmark.renderer]
+        unsafe = true
