@@ -1,17 +1,47 @@
 [
   {
-    "title": "Free Consultation",
-    "description": "New clients recieve an obligation free consultation.",
-    "image": "images/features/noun_branding_1885335.svg"
+    "title": "Sophisticated search",
+    "description": "Faceted, full-text, and model-aware search lets scientists pinpoint records across billions of rows in milliseconds.",
+    "image": "images/features/magnifying-glass-chart-solid.svg"
   },
   {
-    "title": "Certified Accountants",
-    "description": "All members of our team are certified accountants.",
-    "image": "images/features/noun_The Process_1885341.svg"
+    "title": "Data visualizations",
+    "description": "Built-in dashboards render interactive plots, heat maps, and dimension-reduced embeddings directly from live project data—no exporting required.",
+    "image": "images/features/chart-line-solid.svg"
   },
   {
-    "title": "Tax Compliance",
-    "description": "We stay up to date on the latest changes to the tax code.",
-    "image": "images/features/noun_3d modeling_1885342.svg"
+    "title": "Self-Service Curation at Scale",
+    "description": "Scientists can load and publish their own data while hub curators review; FaceBase used this model to surpass 1,000 datasets and 30 projects in two years.",
+    "image": "images/features/users-gear-solid.svg"
+  },
+  {
+    "title": "Flexible Ingest & Metadata QC",
+    "description": "Command-line and Python tools bulk-load any file types, attach controlled-vocabulary metadata, and trigger automated QC dashboards for “self-curation” at scale.",
+    "image": "images/features/cloud-arrow-up-solid.svg"
+  },
+  {
+    "title": "Versioned, Provenance-Aware Storage",
+    "description": "Hatrac object store + BagIt/BDBag packages + Minid persistent IDs guarantee fixity, trace every revision, and make dataset exchange reproducible and cache-friendly.",
+    "image": "images/features/layer-group-solid.svg"
+  },
+  {
+    "title": "Fine-Grained Federated Access Control",
+    "description": "[Globus Auth & Groups] let projects enforce reader/writer/curator roles, embargoes, and single-sign-on with ORCID, Google, or campus IDs—critical for cross-institution work.",
+    "image": "images/features/user-shield-solid.svg"
+  },
+  {
+    "title": "Integrated ML Workflow Support (Deriva-ML)",
+    "description": "A Python library plus GPU-enabled JupyterHub pulls curated datasets, tracks executions, captures configs & results, and pushes them back with provenance—ideal for reproducible AI pipelines.",
+    "image": "images/features/robot-solid.svg"
+  },
+  {
+    "title": "Loosely-Coupled, Brandable Architecture",
+    "description": "Micro-services with public APIs, style/theming hooks, and adaptive UI let each consortium stand up a branded portal yet share the same battle-tested core.",
+    "image": "images/features/cubes-solid.svg"
+  },
+  {
+    "title": "Proven Multi-Domain Track Record",
+    "description": "Deployed in neuroscience, craniofacial biology, ophthalmology ML, and more—demonstrating adaptability and accelerated discovery across disciplines.",
+    "image": "images/features/earth-americas-solid.svg"
   }
 ]

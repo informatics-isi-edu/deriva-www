@@ -1,0 +1,92 @@
+/* larger menu items */
+.main-menu > ul > li {
+    font-size: 1.2rem;
+}
+
+/* wider menu bar */
+@media (min-width: 1300px) {
+    .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 1400px;
+    }
+/* ─── Wider spacing between top-nav menu items (desktop) ─── */
+@media (min-width: 992px) {
+
+  /* <ul> inside <div class="main-menu"> is already display:flex */
+  .main-menu ul {
+    gap: 2rem;           /* 2 rem ≈ 32 px  – tweak as you like */
+  }
+
+  /* Fallback for browsers that don’t support flex-gap */
+  .main-menu ul li + li {
+    margin-left: 2rem;   /* keep this equal to the gap value */
+  }
+}
+
+/* Change hover to solid color background */
+.main-menu > ul > li.active > a {
+  background-color: #CBE28E;
+}
+
+/* ─── HOMEPAGE HERO / INTRO ───────────────────────── */
+.page-home .intro {
+  /* background */
+  background: url("/images/bg-abstract.svg") center / cover no-repeat;
+  padding: 50px 0;            /* top & bottom space */
+
+}
+
+/* centre the headline text block */
+.page-home .intro .col-md-7 {
+  display: flex;
+  align-items: center;        /* vertical */
+  justify-content: center;    /* horizontal */
+  text-align: center;
+}
+
+/* centre the bubble SVG column */
+.page-home .intro .col-md-5,
+.page-home .intro .col-lg-6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* keep the bubble graphic responsive */
+.page-home .intro .intro-image {
+  max-width: 580px;           /* tweak as needed */
+  height: auto;
+  margin-top: 0;
+}
+
+/* Change formatting of Text in .intro homepage */
+
+.page-home .intro h1 {
+  font-size: 36px;
+  display: inline-block;              /* shrink-wrap to the text   */
+  background: rgba(0, 0, 0, 0.55);    /* 55 % opaque black         */
+  color: #fff;
+  padding: 0.75rem 1.25rem;           /* top/bottom 12 px, left/right 20 px */
+  border-radius: 0.5rem;              /* rounded corners           */
+  line-height: 1.25;                  /* tighter lines if multiline */
+}
+
+/* ─── Bigger feature cards on the home-page only ─── */
+.page-home .feature {
+  padding: 28px;          /* more breathing-room */
+}
+.page-home .feature-image {
+  width: 80px;           /* ↑ from 80px */
+  height: 80px;
+  margin-bottom: 24px;
+}
+/* optional: bigger text */
+.page-home .feature-title   { font-size: 1.25rem; }
+.page-home .feature-content { font-size: 1.05rem; }
+
+/* new acknowledgements section in footer */
+
+.acknowledgements {
+  font-size: .8em;
+  color: #CCC;
+  text-align: center;
+}
