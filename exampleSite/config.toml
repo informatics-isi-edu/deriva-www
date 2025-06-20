@@ -84,8 +84,8 @@ title = "DERIVA"
     weight = 4
 
   [[menu.main]]
-    name = "About Us"
-    url = "/about/"
+    name  = "Tools"
+    url   = "/tools/"
     weight = 5
 
   [[menu.main]]

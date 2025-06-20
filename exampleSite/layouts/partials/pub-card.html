@@ -1,0 +1,29 @@
+{{/* ----------------------------------------------------
+     Partial : pub-card
+     Purpose : Render one publication as a card
+   ---------------------------------------------------- */}}
+{{- $p := . -}}
+
+<article class="my-4 border rounded-lg p-4 shadow-sm">
+
+  <h3 class="text-lg font-medium">{{ index $p "title" }}</h3>
+
+  {{/* ---------- authors + year ---------- */}}
+  {{- $authors := index $p "author" -}}
+  <p class="text-sm italic">
+    {{- range $i, $au := $authors -}}
+      {{- if gt $i 0 }}, {{ end -}}
+      {{- printf "%s %s" (index $au "given") (index $au "family") -}}
+    {{- end -}}
+    {{- with (index $p "year") }} ({{ . }}){{ end -}}
+  </p>
+
+  {{ with (index $p "container-title") }}
+    <p class="text-sm">{{ . }}</p>
+  {{ end }}
+
+  {{ with (index $p "URL") }}
+    <a class="btn btn-sm mt-2" href="{{ . }}" target="_blank">View&nbsp;Paper</a>
+  {{ end }}
+
+</article>

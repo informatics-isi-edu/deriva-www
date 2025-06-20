@@ -5,7 +5,7 @@
 
 /* wider menu bar */
 @media (min-width: 1300px) {
-    .container-xl, .container-lg, .container-md, .container-sm, .container {
+    .header .container-xl, .header .container-lg, .header .container-md, .header .container-sm, .header .container {
         max-width: 1400px;
     }
 /* ─── Wider spacing between top-nav menu items (desktop) ─── */
@@ -89,4 +89,16 @@
   font-size: .8em;
   color: #CCC;
   text-align: center;
+}
+
+/* adding abstract background to sub-pages */
+
+ {
+  /* background */
+  background: url("/images/bg-abstract.svg") center / cover no-repeat;
+            /*   padding: 50px 0; top & bottom space */
+}
+
+.page-services-list .container {
+  background: #FFF;
 }

@@ -1,0 +1,52 @@
+[
+  {
+    "title": "deriva-cli",
+    "description": "Command-line uploader, downloader, and metadata tagger for scripted batch operations and CI pipelines.",
+    "link": "https://docs.derivacloud.org/cli/"
+  },
+  {
+    "title": "deriva-py",
+    "description": "Python SDK that provides high-level APIs for ingest, query, schema migration, and automation workflows.",
+    "link": "https://docs.derivacloud.org/deriva-py/"
+  },
+  {
+    "title": "Chaise Web UI",
+    "description": "Model-driven web interface that auto-generates search, browse, and edit pages directly from your ERM metadata.",
+    "link": "https://docs.derivacloud.org/chaise/"
+  },
+  {
+    "title": "Deriva Workbench",
+    "description": "Browser-based data curation and visualization workspace that lets teams clean, annotate, and analyze data collaboratively.",
+    "link": "https://docs.derivacloud.org/deriva-workbench/"
+  },
+  {
+    "title": "deriva-qt",
+    "description": "Cross-platform desktop client (Qt) for power users who need rich drag-and-drop uploads and bulk curation offline.",
+    "link": "https://docs.derivacloud.org/deriva-qt/"
+  },
+  {
+    "title": "deriva-web",
+    "description": "Lightweight REST gateway and starter site that lets you embed DERIVA components into custom web apps.",
+    "link": "https://docs.derivacloud.org/deriva-web/"
+  },
+  {
+    "title": "deriva-ml",
+    "description": "GPU-ready Jupyter and Python helpers for pulling curated datasets, training models, and writing results back with full provenance.",
+    "link": "https://docs.derivacloud.org/deriva-ml/"
+  },
+  {
+    "title": "ERMrest",
+    "description": "Versioned, schema-flexible relational metadata service that underpins DERIVA’s FAIR data lifecycle.",
+    "link": "https://docs.derivacloud.org/ermrest/"
+  },
+  {
+    "title": "ERMrestJS",
+    "description": "JavaScript client for ERMrest and Chaise—use it to build bespoke front-ends or extend existing portals.",
+    "link": "https://docs.derivacloud.org/ermrestjs/"
+  },
+  {
+    "title": "Hatrac Object Store",
+    "description": "Versioned blob storage with fixity checks, range GETs, and Globus-compatible auth—built for large scientific files.",
+    "link": "https://docs.derivacloud.org/hatrac/"
+  }
+]
