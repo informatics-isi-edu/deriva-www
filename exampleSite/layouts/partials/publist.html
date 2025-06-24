@@ -1,0 +1,47 @@
+{{ $byYear := dict }}
+{{ range .Site.Data.deriva }}
+  {{ $issued := index .issued "date-parts" | default (slice (slice "n.d.")) }}
+  {{ $yr := printf "%v" (index $issued 0 0 | default "n.d.") }}
+  {{ $cur := index $byYear $yr | default (slice) }}
+  {{ $cur = append $cur (slice .) }}
+  {{ $byYear = merge $byYear (dict $yr $cur) }}
+{{ end }}
+
+{{ $years := slice }}
+{{ range $k, $v := $byYear }}
+{{ $years = append $years (slice (printf "%s" $k)) }}
+{{ end }}
+{{ $years = collections.Reverse (sort $years) }}
+
+<div class="prose prose-pubs">
+  {{ range $years }}
+    {{ $yr := . }}
+    <h2 id="{{ $yr }}">{{ $yr }}</h2>
+    <ul class="list-disc ml-6 space-y-6">
+      {{ range index $byYear $yr }}
+        {{ $title := .title | default "(untitled)" }}
+        {{ $link  := or .URL (printf "https://doi.org/%s" .DOI) }}
+
+        <li>
+          {{ if $link }}
+            <a class="pub" href="{{ $link }}" target="_blank" rel="noopener">{{ $title }}</a>
+          {{ else }}
+            <span class="pub">{{ $title }}</span>
+          {{ end }}
+
+          {{ $meta := slice }}
+          {{ with .author }}
+            {{ $names := slice }}
+            {{ range . }}{{ $names = append $names (slice .family) }}{{ end }}
+            {{ $meta = append $meta (slice (delimit $names ", ")) }}
+          {{ end }}
+          {{ with index . "container-title" }}{{ $meta = append $meta (slice .) }}{{ end }}
+          {{ with .volume }}{{ $meta = append $meta (slice .) }}{{ end }}
+          {{ with .page }}{{ $meta = append $meta (slice .) }}{{ end }}
+
+          <div class="meta">{{ delimit $meta ". " }}.</div>
+        </li>
+      {{ end }}
+    </ul>
+  {{ end }}
+</div>

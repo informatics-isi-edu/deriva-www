@@ -5,9 +5,11 @@ languageCode = "en-us"
 title = "DERIVA"
 
 [module]
+
   [module.hugoVersion]
     extended = true
-    min = "0.55.0"
+    min = "0.119.0"
+
 
 [params]
   # In most cases you will only want to set the google_analytics_id OR the google_tag_manager_id. If you have Google Analytics included in your GTM tags don't put your GA ID here. Otherwise your data might be useless.
@@ -17,7 +19,7 @@ title = "DERIVA"
 
   # One or many extra style sheets you want injected in <head>.
   # The paths are relative to /static or the project root.
-  customCSS = ["css/custom.css"]
+  customCSS = ["css/custom.css", "css/publications.css"]
 
   [params.homepage]
     sticky_header = false

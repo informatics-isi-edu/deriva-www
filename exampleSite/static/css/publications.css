@@ -1,0 +1,50 @@
+/* --- Publications page tweaks --- */
+
+.prose-pubs h2 {
+  /* text-xl font-size & semi-bold weight */
+  font-size: 1.25rem;          /* 20 px */
+  font-weight: 600;            /* “font-semibold” */
+  line-height: 1.25;           /* matches Tailwind default for h2 */
+  margin-top: 2.5rem;          /* mt-10  (40 px) */
+  margin-bottom: 1rem;         /* mb-4  (16 px) */
+}
+
+.prose-pubs li {
+  margin-bottom: 1.5rem;       /* mb-6  (24 px) */
+  line-height: 1.375;          /* leading-snug */
+}
+
+.prose-pubs a.pub {
+  font-weight: 600;            /* font-semibold */
+  text-decoration: underline;
+}
+
+.prose-pubs a.pub:hover {
+  text-decoration: none;       /* hover:no-underline */
+}
+
+.prose-pubs .meta {
+  font-size: 0.875rem;         /* text-sm  (14 px) */
+  line-height: 1.25rem;        /* Tailwind*
+
+
+/* Hanging indent for long citations */
+.publist li {
+  text-indent: -1.8em;     /* negative indent */
+  padding-left: 1.8em;     /* equal positive left-pad */
+  margin-bottom: 0.9em;
+}
+
+/* Title link look */
+.publist a.pub {
+  font-weight: 600;
+  text-decoration: underline;
+}
+.publist a.pub:hover { text-decoration: none; }
+
+/* Meta line */
+.publist .meta {
+  font-size: 0.9rem;
+  color: #5c5a5a;          /* matches site grey */
+  line-height: 1.35;
+}
