@@ -1,9 +1,9 @@
 ---
-title: "Mergers"
+title: "Protein Data Bank (PDB)"
 date: 2018-11-28T15:15:34+10:00
 featured: true
 draft: false
-weight: 4
+weight: 2
 ---
 
 Mergers involve the combination of two or more companies into a single entity, typically aimed at achieving synergies, expanding market presence, or enhancing competitive advantages.
@@ -11,7 +11,7 @@ Mergers involve the combination of two or more companies into a single entity, t
 
 ![Accounting Services](/images/austin-distel-nGc5RT2HmF0-unsplash.jpg)
 
-# Objectives 
+# Objectives
 
 Financial accounting and financial reporting are often used as synonyms.
 
@@ -21,9 +21,9 @@ Financial accounting and financial reporting are often used as synonyms.
 
 ## Relevance
 
-Relevance is the capacity of the financial information to influence the decision of its users. The ingredients of relevance are the predictive value and confirmatory value. Materiality is a sub-quality of relevance. 
+Relevance is the capacity of the financial information to influence the decision of its users. The ingredients of relevance are the predictive value and confirmatory value. Materiality is a sub-quality of relevance.
 
-> The ingredients of relevance are the predictive value and confirmatory value. 
+> The ingredients of relevance are the predictive value and confirmatory value.
 
 Information is considered material if its omission or misstatement could influence the economic decisions of users taken on the basis of the financial statements.
 
@@ -66,7 +66,7 @@ Cash Inflow | Outflow | Opening Balance
 > **Important:** the cash flow statement only considers the exchange of actual cash, and ignores what the person in question owes or is owed.
 
 ## Statement of financial position (balance sheet)
-The balance sheet is the financial statement showing a firm's assets, liabilities and equity (capital) at a set point in time, usually the end of the fiscal year reported on the accompanying income statement. 
+The balance sheet is the financial statement showing a firm's assets, liabilities and equity (capital) at a set point in time, usually the end of the fiscal year reported on the accompanying income statement.
 
 - **fixed assets**
     - property

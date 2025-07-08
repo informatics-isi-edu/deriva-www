@@ -3,7 +3,7 @@ title: "EyeAI"
 date: 2018-11-28T15:15:26+10:00
 featured: true
 draft: false
-weight: 3
+weight: 4
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pretium congue felis at consequat. Aliquam id lorem nec nunc rhoncus mollis sed at massa.
