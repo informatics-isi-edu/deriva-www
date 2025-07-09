@@ -116,3 +116,50 @@ h1.mb-5.tools-header {
 .sub-footer .sub-footer-inner {
   justify-content: center;
 }
+
+/* Styling contact form */
+/* ─── Contact page polish ─────────────────────────── */
+.contact-form {
+  background: #f8fbff;            /* very light blue tint */
+  padding: 2rem 2.5rem;
+  border-radius: 0.75rem;
+/*  box-shadow: 0 2px 6px rgba(0,0,0,.05); */
+}
+
+.contact-form .form-control {
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: .3rem;
+}
+
+.contact-form textarea.form-control {
+  resize: vertical;
+  min-height: 8rem;
+}
+
+/* Brand-matching button */
+.btn-primary {
+  background-color: #CBE28E;      /* Green highlight used in nav */
+  border-color:   #CBE28E;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #6aa83c;
+  border-color:     #6aa83c;
+}
+/* ── Contact form label alignment ─────────────────────────── */
+.contact-form .form-label {
+  display: block;            /* force label on its own line   */
+  margin-bottom: .35rem;     /* space between label and input */
+  font-weight: 500;          /* optional: bolder text         */
+}
+
+/* Give every form-group a bit more bottom space */
+.contact-form .mb-3,
+.contact-form .mb-4 {
+  margin-bottom: 1.25rem;
+}
+
+input {
+  border-width: 1px;
+}

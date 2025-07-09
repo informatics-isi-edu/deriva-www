@@ -6,17 +6,30 @@ layout: contact
 
 If you have any questions or are interested in a demo, please the form below:
 
-<form name="contact" method="POST" data-netlify="true">
-  <p>
-    <label>Your Name: <input type="text" name="name" /></label>
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
+<form name="contact" method="POST" netlify netlify-honeypot="bot-field" class="contact-form needs-validation" novalidate>
+
+<!-- Netlify bot-field honeypot -->
+<input type="hidden" name="form-name" value="contact">
+<div style="display:none">
+  <label>Don’t fill this out <input name="bot-field"></label>
+</div>
+
+<div class="mb-3">
+  <label for="contact-name" class="form-label">Your Name</label>
+  <input id="contact-name" name="name" type="text"
+         class="form-control" required>
+</div>
+<div class="mb-3">
+  <label for="contact-email" class="form-label">Your Email</label>
+  <input id="contact-email" name="email" type="email"
+         class="form-control" required>
+</div>
+<div class="mb-4">
+  <label for="contact-msg" class="form-label">Message</label>
+  <textarea id="contact-msg" name="message"
+            class="form-control" rows="6" required></textarea>
+</div>
+
+<button type="submit" class="btn btn-primary">Send</button>
+
 </form>
