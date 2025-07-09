@@ -6,78 +6,38 @@ draft: false
 weight: 2
 ---
 
-Mergers involve the combination of two or more companies into a single entity, typically aimed at achieving synergies, expanding market presence, or enhancing competitive advantages.
+PDB-IHM is the integrated pipeline that now archives and validates all Protein Data Bank entries derived from integrative and hybrid methods.  Built on the DERIVA platform, it enables depositors to upload complex multi-scale models, curators to run automated validation, and the wwPDB to release FAIR integrative structures alongside conventional X-ray, NMR, and cryo-EM data.  
 <!--more-->
 
-![Accounting Services](/images/austin-distel-nGc5RT2HmF0-unsplash.jpg)
+## Why PDB-IHM adopted DERIVA
 
-# Objectives
+| Requirement | DERIVA capability |
+|-------------|-------------------|
+| **Rich, evolving data standard (IHMCIF)** | Schema changes propagate automatically to the web UI and API without code rewrites. |
+| **End-to-end provenance** | Versioned object store links every restraint, model, and validation report to its accession code. |
+| **Bulk deposition at consortium scale** | REST and Python APIs handle collections of hundreds of entries in a single workflow run. |
+| **Weekly, synchronized public release** | Timed workflows package mmCIF, validation PDFs, and holdings files for wwPDB distribution. |
 
-Financial accounting and financial reporting are often used as synonyms.
+## Impact since unification (Aug 2024 → Jun 2025)
 
-1. According to International Financial Reporting Standards: the objective of financial reporting is:
-2. To provide financial information that is useful to existing and potential investors, lenders and other creditors in making decisions about providing resources to the reporting entity.
-3. According to the European Accounting Association:
+* **≈ 350 integrative entries** released with 4-character PDB IDs and DOIs.  
+* **15 experimental data types** captured (cross-link MS, SAS, FRET, 3DEM, etc.).  
+* **>60 TB** of associated restraint and model files stored with fixity and version history.  
+* Validation reports streamed to depositors cut curator review time by **40 %**. :contentReference[oaicite:5]{index=5}
 
-## Relevance
+## Typical deposition workflow
 
-Relevance is the capacity of the financial information to influence the decision of its users. The ingredients of relevance are the predictive value and confirmatory value. Materiality is a sub-quality of relevance.
+1. **Research team** converts modeling results to IHMCIF with `python-ihm` and uploads via the PDB-IHM REST API.  
+2. **Automated DERIVA workflow** checks dictionary compliance, generates preliminary validation, and assigns a provisional PDB code.  
+3. **Curator** reviews flags in the Chaise interface, toggles manual vs. auto steps as needed.  
+4. **Release process** packages mmCIF, BinaryCIF, and validation PDFs; hand-off to wwPDB weekly release at 00:00 UTC Wednesday.
 
-> The ingredients of relevance are the predictive value and confirmatory value.
+## Lessons for future repositories
 
-Information is considered material if its omission or misstatement could influence the economic decisions of users taken on the basis of the financial statements.
+* **Dictionary-driven catalogues** avoid hard-coding scientific edge cases.  
+* **Fine-grained ACLs** let external depositors see only their entries while curators see all, improving security and usability.  
+* **Timed release hooks** make it straightforward to embed DERIVA workflows in larger consortium schedules (e.g., wwPDB weekly cycle).
 
-## Faithful Representation
+For technical details see: *Vallat B. et al.* “PDB-IHM: A System for Deposition, Curation, Validation, and Dissemination of Integrative Structures,” *J. Mol. Biol.* 437 (2025) 168963.
 
-Faithful representation means that the actual effects of the transactions shall be properly accounted for and reported in the financial statements. The words and numbers must match what really happened in the transaction. The ingredients of faithful representation are completeness, neutrality and free from error.
-
-## Enhancing Qualitative Characteristics
-
-### Verifiability
-Verifiability implies consensus between the different knowledgeable and independent users of financial information. Such information must be supported by sufficient evidence to follow the principle of objectivity.
-
-### Comparability
-Comparability is the uniform application of accounting methods across entities in the same industry. The principle of consistency is under comparability. Consistency is the uniform application of accounting across points in time within an entity.
-
-### Understandability
-Understandability means that accounting reports should be expressed as clearly as possible and should be understood by those to whom the information is relevant.
-Timeliness: Timeliness implies that financial information must be presented to the users before a decision is to be made.
-
----
-
-## Statement of cash flows
-The statement of cash flows considers the inputs and outputs in concrete cash within a stated period. The general template of a cash flow statement is as follows: Cash Inflow - Cash Outflow + Opening Balance = Closing Balance
-
-Cash Inflow | Outflow | Opening Balance
---- | --- | ---
-*Monday* | `Tuesday` | **Wednesday**
-1 | 2 | 3
-
-
-**Example 1:** in the beginning of September, Ellen started out with $5 in her bank account. During that same month, Ellen borrowed $20 from Tom. At the end of the month, Ellen bought a pair of shoes for $7. Ellen's cash flow statement for the month of September looks like this:
-
-* Cash inflow: $20
-* Cash outflow:$7
-* Opening balance: $5
-* Closing balance: $20 – $7 + $5 = $18
-
-**Example 2:** in the beginning of June, WikiTables, a company that buys and resells tables, sold 2 tables. They'd originally bought the tables for $25 each, and sold them at a price of $50 per table. The first table was paid out in cash however the second one was bought in credit terms. WikiTables' cash flow statement for the month of June looks like this:
-
-> **Important:** the cash flow statement only considers the exchange of actual cash, and ignores what the person in question owes or is owed.
-
-## Statement of financial position (balance sheet)
-The balance sheet is the financial statement showing a firm's assets, liabilities and equity (capital) at a set point in time, usually the end of the fiscal year reported on the accompanying income statement.
-
-- **fixed assets**
-    - property
-    - building
-    - equipment (such as factory machinery)
-- **intangible assets**
-    - copyrights
-    - trademarks
-    - patents
-        - pending
-        - international
-- goodwill
-
-Owner's equity, sometimes referred to as net assets, is represented differently depending on the type of business ownership. Business ownership can be in the form of a sole proprietorship, partnership, or a corporation. For a corporation, the owner's equity portion usually shows common stock, and retained earnings (earnings kept in the company). Retained earnings come from the retained earnings statement, prepared prior to the balance sheet.
+[← Back to all projects](/projects/)
