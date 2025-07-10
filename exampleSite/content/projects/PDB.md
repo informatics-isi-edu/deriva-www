@@ -1,5 +1,5 @@
 ---
-title: "Protein Data Bank (PDB)"
+title: "Protein Data Bank - Integrative and Hybrid Methods (PDB-IHM))"
 date: 2018-11-28T15:15:34+10:00
 featured: true
 draft: false

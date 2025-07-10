@@ -71,7 +71,7 @@ title = "DERIVA"
     weight = 1
 
   [[menu.main]]
-    name = "About DERIVA"
+    name = "Overview"
     url = "/deriva/"
     weight = 2
 

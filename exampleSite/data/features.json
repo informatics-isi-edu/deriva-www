@@ -30,9 +30,9 @@
     "image": "images/features/user-shield-solid.svg"
   },
   {
-    "title": "Integrated ML Workflow Support (Deriva-ML)",
-    "description": "A Python library plus GPU-enabled JupyterHub pulls curated datasets, tracks executions, captures configs & results, and pushes them back with provenance—ideal for reproducible AI pipelines.",
-    "image": "images/features/robot-solid.svg"
+    "title": "Model-Driven Interface (Chaise)",
+    "description": "DERIVA introspects an ER model and auto-generates rich search, edit, and visualization pages. Define or tweak your entity-relationship model and DERIVA auto-generates a rich web UI.",
+    "image": "images/icons/diagram-project-solid.svg"
   },
   {
     "title": "Loosely-Coupled, Brandable Architecture",
