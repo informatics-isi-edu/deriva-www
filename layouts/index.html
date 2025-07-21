@@ -15,6 +15,50 @@
   </div>
 </div>
 
+<!-- ─── WHY DERIVA FIRST ROW ───────────────────────────────────────── -->
+<section class="strip strip-grey py-5">
+  <div class="container">
+    <!--
+<p>The Discovery Environment for Relational Information and Versioned Assets (DERIVA) is a data-centric, open-source, model-driven platform that turns any research dataset — imaging, ‘omics, models, protocols, and much more — into a continuously FAIR, version-controlled, and citable asset.  </p>
+-->
+<p>The Discovery Environment for Relational Information and Versioned Assets (DERIVA) is a data-centric platform that treats every file, table row, and analysis result as a first-class, version-controlled asset from the moment it is generated in the lab to its final citation in a paper.  By combining a model-driven relational catalog with a versioned object store and open APIs, DERIVA lets scientists curate evolving datasets, automate quality checks, and publish continuously FAIR collections.
+</p>
+    <div class="row align-items-center">
+
+      <!-- FEATURE 1 : FAIR lifecycle -->
+      <div class="col-12 col-md-6 mb-4 mb-md-0 text-center">
+        <img
+          src="/images/icons/arrows-rotate-solid.svg"
+          class="mb-3"
+          alt="FAIR Lifecycle icon"
+          width="80" height="80"  />
+        <h3 class="h4">Continuous FAIR Data&nbsp;Lifecycle</h3>
+        <p class="lead mb-0">
+          Every asset — raw, intermediate, or published — is instantly
+          <strong>Findable, Accessible, Interoperable, and Reusable</strong>,
+          with schema evolution tracked from experiment design to publication.
+        </p>
+      </div>
+
+      <!-- FEATURE 2 : Model-driven UI -->
+      <div class="col-12 col-md-6 text-center">
+        <img
+          src="/images/features/robot-solid.svg"
+          class="mb-3"
+          alt="Model-Driven UI icon"
+          width="80" height="80" />
+        <h3 class="h4">Reproducible ML and Informatics Workflows</h3>
+        <p class="lead mb-0">
+          A Python library plus GPU-enabled JupyterHub pulls curated datasets, tracks executions, captures configs & results, and pushes them back with provenance — ideal for reproducible AI pipelines
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ─────────────────────────────────────────────────────────────────── -->
+
+
 {{ $services := where (where .Site.RegularPages "Type" "services") ".Params.featured" true }}
 {{if gt (len $services) 0}}
 <div class="strip">
@@ -33,6 +77,7 @@
       </div>
     </div>
     {{ end }}
+
   </div>
 </div>
 {{end}}
@@ -45,7 +90,7 @@
       <div class="col-12 col-md-6 col-lg-4 mb-2">
         <div class="feature">
           {{ if .image }}
-          <div class="feature-image"><img width="100" height="100" alt="{{ .Title }} logo"
+          <div class="feature-image"><img width="80" height="80" alt="{{ .Title }} logo"
               src="{{ .image | relURL }}" /></div>
           {{ end }}
           <h2 class="feature-title">{{ .title }}</h2>
@@ -56,8 +101,14 @@
       </div>
       {{end}}
     </div>
+    <div class="row justify-content-center">
+      <div class="col-auto">
+        <a class="button button-primary" href="{{ "projects/" | relURL }}">View Projects Built on DERIVA</a>
+      </div>
+    </div>
   </div>
 </div>
+
 {{end}}
 
 {{ end }}

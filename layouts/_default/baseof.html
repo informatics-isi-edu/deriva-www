@@ -18,6 +18,13 @@
   {{ end }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
+  {{- /* ➜ Add this block ­– it loops over any paths you list in config.toml */ -}}
+  {{- with .Site.Params.customCSS }}
+    {{- range . }}
+      <link rel="stylesheet" href="{{ . | relURL }}">
+    {{- end }}
+  {{- end }}
+
   {{ block "header_css" . }}{{ end }}
 
   {{ block "meta_tags" . }}
@@ -32,6 +39,8 @@
     {{ with .Site.Params.seo.meta_twitter_creator }}<meta name="twitter:creator" content="{{ . }}"/>{{ end }}
   {{ end }}
 
+  {{ partialCached "head-extra.html" . }}
+  
 </head>
 
 <body class='page {{ block "body_classes" . }}{{ end }}'>
