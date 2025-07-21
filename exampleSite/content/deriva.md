@@ -26,6 +26,9 @@ DERIVA sits in the middle:
 * **Share** data collections privately or publicly with DOI landing pages.  
 * **Enforce access control** down to the row or object level.  
 
+![Screenshot of the search page for facebase.org](/images/search-page.png)
+*Screenshot of the main search page for FaceBase*
+
 ## Core components
 
 | Layer | Component | Purpose |
@@ -48,6 +51,7 @@ All services communicate over open REST/HTTP; deployments range from a single VM
 
 DERIVA is released under the Apache 2.0 licence. Work is funded by multiple NIH grants (NIDCR, NIDCD, NIDDK, NIGMS, NLM, NEI) and maintained by the Informatics Systems Research Division at USC ISI.  
 
+<!--
 ---
 
 ## Suggested figure updates
@@ -74,3 +78,4 @@ ChatGPT suggested the following update. But could just verify the Core Component
 
 ````
 *Show clear separation between UI, services, and infrastructure.*
+-->

@@ -31,7 +31,7 @@ title = "DERIVA"
     mobile_height = "36px"
     desktop = "images/logo/logo.png"
     desktop_height = "100px"
-    alt = "DERIVA - an asset management platform designed to support scientific collaboration through the full lifecycle of data"
+    alt = "DERIVA - a data-centric asset management platform designed to support scientific collaboration through the full lifecycle of data"
 
   [params.fonts]
   # Google Fonts request for Inter (400 regular & 600 semi-bold)
@@ -97,13 +97,13 @@ title = "DERIVA"
 
   # Footer Menu
   [[menu.footer]]
-    name = "California Data Privacy Law"
-    url = "#"
+    name = "Contact Us"
+    url = "/contact/"
     weight = 1
 
   [[menu.footer]]
     name = "Privacy Policy"
-    url = "#"
+    url = "/privacy/"
     weight = 2
 
   [markup]
