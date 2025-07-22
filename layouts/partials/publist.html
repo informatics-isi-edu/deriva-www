@@ -36,8 +36,7 @@
             {{ $meta = append $meta (slice (delimit $names ", ")) }}
           {{ end }}
           {{ with index . "container-title" }}{{ $meta = append $meta (slice .) }}{{ end }}
-          {{ with .volume }}{{ $meta = append $meta (slice .) }}{{ end }}
-          {{ with .page }}{{ $meta = append $meta (slice .) }}{{ end }}
+
 
           <div class="meta">{{ delimit $meta ". " }}.</div>
         </li>
