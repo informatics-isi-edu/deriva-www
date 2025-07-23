@@ -6,3 +6,9 @@
   HUGO_VERSION = "0.132.0"
   HUGO_THEME = "../.."
   HUGO_BASEURL = "/"
+
+[[redirects]]
+  from = "https://deriva.isi.edu/*"
+  to   = "https://derivacloud.org/:splat"
+  status = 301
+  force = true
